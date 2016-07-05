@@ -1,0 +1,18 @@
+{
+ "Version": "2012-10-17",
+ "Statement": [
+  {
+   "Effect": "Allow",
+   "Action": [
+    "dynamodb:BatchGetItem",
+    "dynamodb:GetItem",
+    "dynamodb:Query"
+   ],
+   "Resource": [
+    "arn:aws:dynamodb:us-east-1:ACCTNUMREPLACE:table/livingWage/*"
+    "arn:aws:dynamodb:us-east-1:ACCTNUMREPLACE:table/livingWage"
+   ]
+   }
+  }
+ ]
+}

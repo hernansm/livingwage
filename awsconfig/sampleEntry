@@ -1,0 +1,19 @@
+{
+  "locationFamilyId": "01-1A0P0C",
+  "locationId": "01",
+  "familyId": "1A0P0C",
+  "livingWage": 10,
+  "povertyWage": 5,
+  "minimumWage": 7.25,
+  "areaName": "Alabama",
+  "state": "AL",
+  "food": 3011,
+  "childcare": 0,
+  "healthcare": 2270,
+  "rent": 5942,
+  "transportation": 4290,
+  "other": 2146,
+  "taxes": 3137,
+  "reqPostTaxIncome": 17659,
+  "requiredPreTaxIncome": 20796
+}
