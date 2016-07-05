@@ -1,0 +1,25 @@
+#set($inputRoot = $input.path('$'))
+{
+    "livingWage": [
+        #foreach($elem in $inputRoot.Items) {
+			"locationFamilyId": "$elem.locationFamilyId.S",
+			"locationId": "$elem.locationId.S",
+			"familyId": "$elem.familyId.S",
+			"livingWage": "$elem.livingWage.N",
+			"povertyWage": "$elem.povertyWage.N",
+			"minimumWage": "$elem.minimumWage.N",
+			"areaName": "$elem.areaName.S",
+			"state": "$elem.state.S",
+			"food": "$elem.food.N",
+			"childcare": "$elem.childcare.N",
+			"healthcare": "$elem.healthcare.N",
+			"rent": "$elem.rent.N",
+			"transportation": "$elem.transportation.N",
+			"other": "$elem.other.N",
+			"taxes": "$elem.taxes.N",
+			"reqPostTaxIncome": "$elem.reqPostTaxIncome.N",
+			"requiredPreTaxIncome": "$elem.requiredPreTaxIncome.N"
+        }#if($foreach.hasNext),#end
+	#end
+    ]
+}

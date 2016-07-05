@@ -1,0 +1,10 @@
+{
+    "TableName": "livingWage",
+    "IndexName": "locationFamilyId-index",
+    "KeyConditionExpression": "locationFamilyId = :v1",
+    "ExpressionAttributeValues": {
+        ":v1": {
+            "S": "$input.params('locationFamilyId')"
+        }
+    }
+}
